@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+	<title>Страница</title>
+	<meta charset="UTF-8">
+	<style>
+	div.block1::before {
+		color: green;
+		content: '\2713';
+	}
+	
+	.block1 {
+		width: 140px;
+		position: relative;
+		top: -22px
+	}
+	
+	.input1 {
+		position: relative;
+		width: 250px;
+		left: 140px
+	}
+	
+	input:invalid + div.block1::before {
+		color: red;
+		content: "* ";
+	}
+	
+	input:invalid + div.block1 {
+		position: relative;
+		top: -19px
+	}
+	
+	div.block2::before {
+		color: green;
+		content: '\2713';
+	}
+	
+	.block2 {
+		width: 135px;
+		position: relative;
+		top: -22px
+	}
+	
+	.input2 {
+		position: relative;
+		left: 135px
+	}
+	
+	input:invalid + div.block2::before {
+		color: red;
+		content: "* ";
+	}
+	
+	input:invalid + div.block2 {
+		position: relative;
+		top: -19px
+	}
+	
+	div.block3::before {
+		color: green;
+		content: '\2713';
+	}
+	
+	.block3 {
+		width: 205px;
+		position: relative;
+		top: -22px
+	}
+	
+	.input3 {
+		position: relative;
+		left: 205px
+	}
+	
+	input:invalid + div.block3::before {
+		color: red;
+		content: "* ";
+	}
+	
+	input:invalid + div.block3 {
+		position: relative;
+		top: -19px
+	}
+	
+	div.block4::before {
+		color: green;
+		content: '\2713';
+	}
+	
+	.block4 {
+		width: 260px;
+		position: relative;
+		top: -22px
+	}
+	
+	.input4 {
+		position: relative;
+		left: 260px
+	}
+	
+	input:invalid + div.block4::before {
+		color: red;
+		content: "* ";
+	}
+	
+	input:invalid + div.block4 {
+		position: relative;
+		top: -19px
+	}
+	
+	.block5 {
+		width: 300px;
+		position: relative;
+		top: -22px
+	}
+	
+	.input5 {
+		position: relative;
+		left: 300px
+	}
+	
+    </style>
+</head>
+<body>
+    <form>
+		<input class="input1" name="name" required><div class="block1">Имя пользователя </div>
+		<input class="input2" type="number" name="email" required><div class="block2">Сколько вам лет? </div>
+		<input class="input3" name="site" required><div class="block3">Вы учитесь или работаете? </div>
+		<input class="input4" name="site" required><div class="block4">Сколько у вас свободного времени? </div>
+		<input class="input5" type="url" name="site"><div class="block5">Что вы обычно делаете в свободное время? </div>
+		<p><input style="position: relative; left: 200px;" type="submit" value="Отправить"></p>
+	</form> 
+</body>
+</html>
